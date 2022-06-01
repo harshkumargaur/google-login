@@ -2,7 +2,11 @@
 <h2>App run on <em>https://localhost:3000</em></h2>
 
 ## file/folder structure
+<img src="/utis/google.png" />
+---------------------------------
 
+### server configuration is present in server.js file
+### to generate self signed certificate run the command in /utils/genSsl.txt
 ## configuring google developers console
 
 * create new web application
@@ -32,9 +36,27 @@
 </p>
 
 ## configuring express-sessions and express-session-mongodb
+<p>
+    for express session see line(42-53) in app.js
+    sessions are stored using connect-mongodb-session npm pkg
+</p>
 
 ## registering user
 
-## authenticatng user using google
+<p>
+    This functionality is handled using verify function in app.js at line(76-97)
+</p>
+
+## authenticatng user using google (Logging in user)
+
+<p>
+
+1. This functionality is handled in app.js at line(117-124)
+2. after successfull login req.user = req.session.passport.user
+3. for protecting the routes from unauthorised access a function named protect is used see app.js at line(23-39)
+</p>
+
+
 
 ## logging out user
+    see app.js at line(135-145)

@@ -109,9 +109,6 @@ passport.use(new GoogleStrategy({
     callbackURL: 'https://localhost:3000/auth/google/callback'
 }, verify));
 
-
-
-
 app.get('/', (req, res) => {
     res.status(200).render('home', { title: 'Home' });
 })
