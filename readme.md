@@ -2,7 +2,7 @@
 <h2>App run on <em>https://localhost:3000</em></h2>
 
 ## file/folder structure
-<img src="/utis/google.png" />
+<img src="/utils/google.png" />
 ---------------------------------
 
 ### server configuration is present in server.js file
